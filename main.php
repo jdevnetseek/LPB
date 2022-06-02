@@ -534,9 +534,17 @@ $kr_LPB_custom_capabilities = array(
 function krplugin_deactivate(){
 	global $wpdb;
 	 $email 			= get_option( '_activation_email' );  
-	 $licence_key 		= get_option( '_license_key' );
+	 $licence_key 		= get_option( '__key' );
 	 $software_title  	= get_option( '_product_id_key');
 	
 } 
+function test(){
+    $licence_key 		= get_option( '_license_key' );
+    echo '<pre>';
+    print_r(  $licence_key );
+    echo '<pre>';
+    die();
+
+}
 
 ?>

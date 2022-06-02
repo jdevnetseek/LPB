@@ -412,7 +412,7 @@ function plugin_get_version() {
 					$results[ 'activated' ] =  $response->activated;
 			
 					$results[ 'email' ] 		= $params[ 'email' ];
-					$results[ 'licence_key' ] 	= $params[ 'licence_key' ];
+					// $results[ 'licence_key' ] 	= $params[ 'licence_key' ];
 					$results[ 'product_id' ] 	= $params[ 'product_id' ];
 					$results[ 'platform' ] 		= $params[ 'platform' ];
 					$results[ 'software_version' ] = $params[ 'software_version' ];

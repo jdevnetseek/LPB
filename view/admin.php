@@ -916,7 +916,7 @@ function MenuManagement()
  	 if (!empty(get_option( 'kr_license_key',''))){
 		add_menu_page('Landing Page Booster' , 'Landing Page Booster', 'kr_admin_role', 'krurls', 'AddKrwUrl',false);
 		add_submenu_page('krurls', __('Instructions','menu-kwr'), __('Instructions','menu-kwr'), 'kr_admin_role', 'instructions', 'instructions');
-		add_submenu_page('krurls', __('License','menu-kwr'), __('License','menu-kwr'), 'manage_options', 'krSetup', 'krSetup');
+		// add_submenu_page('krurls', __('License','menu-kwr'), __('License','menu-kwr'), 'manage_options', 'krSetup', 'krSetup');
 	 } 
 	else{
 		add_menu_page('Landing Page Booster' , 'Landing Page Booster', 'manage_options', 'krSetup', 'krSetup',false);
